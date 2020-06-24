@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "geoip.component.scss"
+    ],
+    "names": [],
+    "file": "geoip.component.css"
+}

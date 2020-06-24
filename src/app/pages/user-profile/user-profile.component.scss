@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Import Font
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+// List of icons and colours
+$icon-list: ( vimeo "\f27d" #4dbfe3, twitter "\f099" #32b9e7, facebook "\f09a" #4b70ab, googleplus "\f0d5" #fa5432, pintrest "\f231" #d63533, linkedin "\f0e1" #0087be, dribble "\f17d" #fc89b1, stumbleupon "\f1a4" #f15d29, lastfm "\f202" #e42124, instagram "\f16d" #6291b2, dropbox "\f16b" #167ab6, soundcloud "\f1be" #fb740b, behance "\f1b4" #33abdb, skype "\f17e" #00AFF0, github "\f113" #333333, flickr "\f16e" #333333, rss "\f09e" #FB7629, );
+// Each loop for creating the icon CSS
+@each $icon,
+$unicode,
+$icon-background in $icon-list {
+    .icon--#{$icon} {
+        &::before {
+            content: $unicode;
+        }
+    }
+    .social__icon--#{$icon} {
+        background-color: $icon-background;
+        &:hover {
+            // Swap black for white to make the icons lighter on hover
+            background-color: mix(black, $icon-background, 15%);
+        }
+    }
+}
+
+// Display icons next to each other
+.social__item {
+    display: inline-block;
+    margin-right: 0.1em;
+}
+
+// Basic icon style
+.icon {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    // Better Font Rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Extend icon to all other icons
+[class^="icon--"] {
+    @extend .icon;
+}
+
+// Icon background
+.social__icon {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    // Remove border radius to make icons square
+    border-radius: 100%;
+    width: 2.2em;
+    height: 2.2em;
+    text-align: center;
+    // Vertical Centering
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Extend social__icon to all other icons
+[class^="social__icon"] {
+    @extend .social__icon;
+}
+
+// Add padding to icons container
+.social__container {
+    padding: 1em;
+    font-size: 1.5em;
+}
