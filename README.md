@@ -13,10 +13,15 @@
  - **Test Ping**: is used to determine the connection and response time of the server connected to the Internet.
  - **Whois**: do an online Whois lookup for domain names or IP addresses to find the registered owner, netblock, ASN and registration date.
 
-## Technologies:
+## Technologies
 
  - **Angular**: this website uses a famous front-end framework called Angular.
  - **Hacker Target**: this RESTful API has all the tools for Information Gathering.
  - **Template**: this website is used by template of [Creative Tim](https://www.creative-tim.com/).
  - **Vercel**: open source serverless for deloying SPA web app.
  - **GeoIP**: open source for collecting the location of target website.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
