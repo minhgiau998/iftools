@@ -1,6 +1,6 @@
 #  iftools 🌐 + 🧰
 ![iftools logo](https://iftools.vercel.app/assets/img/brand/iftools.png)
-> A website that allow us to gather information of target website easily. of target website easily.
+> A website that allow us to gather information of target website easily.
 
 ## Feature
 
